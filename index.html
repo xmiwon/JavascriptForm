@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <form class="col-lg" id="register-form" novalidate>
+            <div class="mb-3 ">
+                <label for="email" class="form-label">Email address</label><span id="email-error" class="error-red"></span>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" required  />
+                
+                <label for="name" class="form-label">First name</label><span id="name-error" class="error-red"></span>
+                <input id="name" type="text" placeholder="First name" class="form-control" autocomplete="off" required />
+
+                <label for="lastname" class="form-label">Last name</label><span id="lastname-error" class="error-red"></span>
+                <input id="lastname" type="text" placeholder="Last name" class="form-control"  required />
+
+                <label for="phone" class="form-label">Phone number</label><span id="phone-error" class="error-red"></span>
+                <input type="number" id="phone" placeholder="Phone number" class="form-control" required />
+
+                <label for="address" class="form-label">Address</label><span id="address-error" class="error-red"></span>
+                <input type="text" id="address" placeholder="Address" class="form-control"  required />
+
+                <label for="code" class="form-label">Postal code</label><span id="code-error" class="error-red"></span>
+                <input type="number" id="code" placeholder="Postal code" class="form-control"  required/>
+
+                <label for="city" class="form-label">City</label><span id="city-error" class="error-red"></span>
+                <input type="text" id="city" placeholder="City" class="form-control"  required/>
+            </div>
+
+            
+            
+            <div id="button-container">
+                <button id="submit-btn" type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+            
+            
+        <div class="col">
+            <div id="col-container2">
+                <button id="edit" class="btn btn-outline-info">Edit</button>
+                <button id="delete" class="btn btn-outline-info" disabled>Delete</button>
+              
+                <div id="user-list"></div>
+            </div>         
+        </div>
+
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+    <script type="module" src="script.js"></script>
+    
+</body>
+
+</html>

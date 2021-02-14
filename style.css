@@ -1,0 +1,27 @@
+.error-red {
+    color: red;
+    margin-left: 5px;
+}
+
+.span-text {
+    font-weight: bold;
+}
+
+#span-id {
+    font-weight: bold;
+    color: gray;
+}
+
+
+.panel, .flip {
+    margin: 2px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:#acecff;
+    border:solid 1px #c3c3c3;
+}
+.panel {
+
+    display:none;
+}
+
